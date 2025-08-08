@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+  <meta charset="UTF-8">
+  <title>หน้าแรก - นิวเด็กหอพระเครื่อง</title>
+  <style>
+    body {
+      font-family: sans-serif;
+      background: #f8f8f8;
+      margin: 0;
+      padding: 0;
+    }
+    header, footer {
+      background: #25D366;
+      color: white;
+      text-align: center;
+      padding: 10px 0;
+    }
+    nav a {
+      margin: 0 10px;
+      color: white;
+      text-decoration: none;
+    }
+    main {
+      padding: 20px;
+      text-align: center;
+    }
+    .random-box {
+      background: white;
+      padding: 20px;
+      margin: 30px auto;
+      border-radius: 10px;
+      max-width: 500px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    }
+    button {
+      background-color: #25D366;
+      color: white;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 5px;
+      font-size: 16px;
+      cursor: pointer;
+    }
+    img#amuletImage {
+  margin-top: 15px;
+  width: 100%;
+  max-width: 300px;
+  border-radius: 10px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  display: none;
+}
+    }
+    #result {
+      margin-top: 15px;
+      font-size: 20px;
+      color: #333;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>นิวเด็กหอพระเครื่อง</h1>
+ <nav>
+    <a href="new1.html">หน้าแรก</a>
+    <a href="new2.html">วัตถุมงคล</a>
+    <a href="new3.html">ติดต่อเรา</a>
+    <a href="new4.html">เครดิต</a>
+    <a href="new5.html">สุ่มวัตถุมงคล</a>
+    <a href="new6.html">ประวัติหลวงพ่อกวยเเละเกจิ</a>
+    <a href="new7.html">สถิติการเข้าชมเว็บพระเครื่อง</a>
+    
+  </nav>
+  </header>
+
+  <main>
+    <h2>ยินดีต้อนรับ</h2>
+    <p>ร้านพระเครื่อง นิวเด็กหอ </p>
+ <section>
+      <p>หากสนใจสอบถามหรือสั่งจองพระเครื่อง กรุณาติดต่อผ่านช่องทางด้านล่าง</p>
+      <p>โทร: 0952067352(คุณนิว)</p>
+      <p>LINE: <a href="https://line.me/ti/p/ejrDqUT205" class="line-btn">แชทผ่าน LINE</a></p>
+      <p>Facebook: <a href="https://www.facebook.com/share/16pfWDtgf3/" target="_blank">นิวเด็กหอพระเครื่อง</a></p>
+    </section>
+    <section class="random-box">
+      <h2 style="color:#25D366;">สุ่มวัตถุมงคล</h2>
+      <p>ไม่รู้จะเลือกอะไร? ลองกดปุ่มสุ่มดูสิ!</p>
+      <button onclick="randomAmulet()">🎲 สุ่มเลย!</button>
+      <div id="result">✨ รอผลสุ่ม...</div>
+      <img id="amuletImage" src="" alt="วัตถุมงคลที่สุ่มได้">
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 นิวเด็กหอพระเครื่อง | รับประกันแท้ ส่งฟรีทั่วไทย</p>
+  </footer>
+
+  <script>
+    const amulets = [
+      {
+        name: "ตัวพ.พานหลวงพ่อวิชัยวัดหัวเด่นปี 2568 ราคา650฿ส่งฟรี",
+        image: "https://lh5.googleusercontent.com/d/131S6ljLn56kNdGyGW5Cu8hK6Xam9mlCt"
+      },
+      {
+        name: "เหรียญหลวงพ่อวิชัย วัดหัวเด่น รุ่นเสมาสร้างบารมี ปี2568 ราคา450฿ส่งฟรี",
+        image: "https://lh5.googleusercontent.com/d/13PmW4UD9dG7-LNVxztE0qENS4-0d0h5c"
+      },
+      {
+        name: "ขุนแผนโพทะเล หลวงพ่อนงค์",
+        image: "https://example.com/image3.jpg"
+      },
+      {
+        name: "นกคุ้มเขาควาย หลวงพ่อกวยปี68 ราคา300฿ส่งฟรี",
+        image: "https://lh5.googleusercontent.com/d/13dp3r68yXjn1dRDOcZbHQn5sL1bDnGnb"
+      },
+      {
+        name: "พระผงนางกวักโภคทรัพย์หลวงพ่อวิชัยวัดหัวเด่นปี2567 ราคา: 200 บาท",
+         
+        image: "https://lh5.googleusercontent.com/d/1324wBLElc9sGq2Qt_nveR-mEyrkOdR4r"
+        
+      },
+      {
+        name: "ยังไม่มีของ",
+        image: "https://example.com/image6.jpg"
+      },
+      {
+        name: "ยังไม่มีของ",
+        image: "https://example.com/image7.jpg"
+      },
+      {
+        name: "ยังไม่มีของ",
+        image: "https://example.com/image8.jpg"
+      },
+      {
+        name: "ยังไม่มีของ",
+        image: "https://example.com/image9.jpg"
+      },
+      {
+        name: "ยังไม่มีของ",
+        image: "https://example.com/image10.jpg"
+      }
+    ];
+
+    function randomAmulet() {
+      const randomIndex = Math.floor(Math.random() * amulets.length);
+      const selected = amulets[randomIndex];
+
+      document.getElementById("result").innerText = "🔮 คุณได้: " + selected.name;
+      const img = document.getElementById("amuletImage");
+      img.src = selected.image;
+      img.style.display = "block";
+    }
+  </script>
+
+</body>
+</html>

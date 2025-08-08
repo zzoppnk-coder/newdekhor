@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+  <meta charset="UTF-8">
+  <title>สถิติผู้เข้าชม | นิวเด็กหอพระเครื่อง</title>
+  <meta name="description" content="สถิติการเข้าชมเว็บไซต์นิวเด็กหอพระเครื่อง เว็บไซต์วัตถุมงคลยอดนิยมของผู้ศรัทธาทั่วไทยและต่างประเทศ">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Google Font: Prompt -->
+  <link href="https://fonts.googleapis.com/css2?family=Prompt:wght@300;400;600&display=swap" rel="stylesheet">
+
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Prompt', sans-serif;
+      background: linear-gradient(135deg, #fef9f4, #d6eaf8);
+      margin: 0;
+      padding: 0;
+      color: #333;
+    }
+
+    .container {
+      max-width: 600px;
+      margin: 80px auto;
+      background: #fffaf0;
+      padding: 40px 30px;
+      border-radius: 24px;
+      box-shadow: 0 12px 30px rgba(0, 0, 0, 0.1);
+      text-align: center;
+      border: 2px solid #f5c518;
+      animation: fadeIn 1s ease-in-out;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    h1 {
+      color: #b03a2e;
+      font-size: 32px;
+      margin-bottom: 20px;
+    }
+
+    .count {
+      font-size: 42px;
+      color: #2874a6;
+      margin: 30px 0;
+      font-weight: bold;
+    }
+
+    .thankyou {
+      font-size: 18px;
+      color: #666;
+      margin-top: 20px;
+      line-height: 1.6;
+    }
+
+    footer {
+      text-align: center;
+      margin-top: 60px;
+      color: #999;
+      font-size: 14px;
+    }
+
+    .icon {
+      font-size: 60px;
+      margin-bottom: 10px;
+      color: #f5b041;
+    }
+
+    @media (max-width: 480px) {
+      .container {
+        padding: 30px 20px;
+        margin: 40px 20px;
+      }
+
+      .count {
+        font-size: 32px;
+      }
+
+      h1 {
+        font-size: 24px;
+      }
+
+      .icon {
+        font-size: 50px;
+      }
+    }
+  </style>
+</head>
+ <nav>
+    <a href="new1.html">หน้าแรก</a>
+    <a href="new2.html">วัตถุมงคล</a>
+    <a href="new3.html">ติดต่อเรา</a>
+    <a href="new4.html">เครดิต</a>
+    <a href="new5.html">สุ่มวัตถุมงคล</a>
+    <a href="new6.html">ประวัติหลวงพ่อกวยเเละเกจิ</a>
+    <a href="new7.html">สถิติการเข้าชมเว็บพระเครื่อง</a>
+    </nav>
+<body>
+
+  <div class="container">
+    <div class="icon">📈</div>
+    <h1>สถิติผู้เข้าชมเว็บไซต์</h1>
+    <div class="count" id="visitorCount">ผู้เข้าชมทั้งหมด: <strong>0</strong> คน</div>
+    <p class="thankyou">
+      ขอขอบพระคุณทุกท่านที่เข้ามาเยี่ยมชม<br>
+      และให้ความศรัทธาในวัตถุมงคลของเรา 🙏<br>
+      <span style="color: #b7950b;">ขอให้ท่านมีโชคดีและพบสิ่งดีงามในชีวิต</span>
+    </p>
+  </div>
+
+  <footer>
+    © 2025 นิวเด็กหอพระเครื่อง | พลังศรัทธา สะสมคุณค่า
+  </footer>
+
+  <script>
+    let count = localStorage.getItem('visitorCount') || 0;
+    count++;
+    localStorage.setItem('visitorCount', count);
+    document.getElementById("visitorCount").innerHTML = "ผู้เข้าชมทั้งหมด: <strong>" + count + "</strong> คน";
+  </script>
+
+</body>
+</html>
